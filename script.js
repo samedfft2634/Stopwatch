@@ -13,7 +13,7 @@ let setStopWatch;
 let flag = true;
 
 const stopWatchUpdate = () => {
-	mseconds += 10;
+	mseconds += 1;
 	if (mseconds >= 100) {
 		mseconds = 0;
 		seconds++;
@@ -32,7 +32,7 @@ const stopWatchUpdate = () => {
 
 play.addEventListener("click", () => {
 	if (flag) {
-		setStopWatch = setInterval(stopWatchUpdate, 100);
+		setStopWatch = setInterval(stopWatchUpdate, 10);
 		flag = false;
 		playSound.play();
 	}
