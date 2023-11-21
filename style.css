@@ -3,20 +3,23 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-main {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgb(33, 42, 46);
+
+body{
+    min-height: 100vh;
+    background: rgb(33, 42, 46);
 	background: radial-gradient(
 		circle,
 		rgba(33, 42, 46, 1) 0%,
 		rgba(18, 10, 15, 1) 100%
 	);
 }
-.cointainer {
-	position: relative;
+main {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-40%,-50%);
+}
+.container {
 	width: 600px;
 	height: 600px;
 	background-image: url(./asssets/2d.png);
@@ -81,4 +84,44 @@ main {
 @font-face {
     font-family: 'Digital'; /*a name to be used later*/
     src: url('./asssets/digital-7.regular.ttf'); /*URL to font*/
+}
+
+@media screen and (max-width:736px){
+    main {
+        top: 53%;
+        left:45%;
+    }
+}
+
+@media screen and (max-width:637px){
+    main {
+        top: 53%;
+        left:44%;
+    }
+    .container{
+        width:465px;
+        height: 493px;
+    }
+    #stopWatch {
+        font-size: 2rem;
+    }
+    
+    #play {
+        left: 37%;
+        font-size: 1.3rem;
+    }
+    
+    #stop {
+        left: 39%;
+        top: 53%;
+        font-size: 1.3rem;
+        padding: 5px 0.3rem;
+    }
+    
+    #reset {
+        left: 56%;
+        width: 30px;
+        height: 30px;
+        font-size: .6rem;     
+    }
 }
