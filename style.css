@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+main {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgb(33, 42, 46);
+	background: radial-gradient(
+		circle,
+		rgba(33, 42, 46, 1) 0%,
+		rgba(18, 10, 15, 1) 100%
+	);
+}
+.cointainer {
+	position: relative;
+	width: 600px;
+	height: 600px;
+	background-image: url(./asssets/2d.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#stopWatch {
+	position: absolute;
+	left: 31%;
+	top: 40%;
+	color: orange;
+	font-size: 2.6rem;
+    font-family: 'Digital';
+}
+
+#play {
+	position: absolute;
+	left: 38%;
+	top: 29%;
+	font-size: 1.6rem;
+	color: #f5f2d0;
+	padding: 0 0.3rem;
+	border-radius: 1.2rem;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#stop {
+	position: absolute;
+	left: 39%;
+	top: 54%;
+	font-size: 1.6rem;
+	color: #f5f2d0;
+	padding: 2px 0.3rem;
+	border-radius: 1.2rem;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#reset {
+	position: absolute;
+	left: 55%;
+	top: 50%;
+	width: 35px;
+	height: 35px;
+	font-size: .8rem;
+	border-radius: 50%;
+	background: transparent;
+	border: 2px solid #000;
+	outline: none;
+	cursor: pointer;
+	color: #f5f2d0;
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'Digital'; /*a name to be used later*/
+    src: url('./asssets/digital-7.regular.ttf'); /*URL to font*/
+}
