@@ -28,10 +28,24 @@ main {
 	background-position: center;
 }
 
+#time{
+    position: absolute;
+	color: orange;
+    left: 52%;
+	top: 38%;
+    padding-top: 2px;
+}
+#date{
+	position: absolute;
+	color: orange;
+    left: 34%;
+	top: 38%;
+    padding-top: 2px;
+}
 #stopWatch {
 	position: absolute;
 	left: 31%;
-	top: 40%;
+	top: 41%;
 	color: orange;
 	font-size: 2.6rem;
     font-family: 'Digital';

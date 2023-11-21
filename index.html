@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stopwatch</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./asssets/stop-watch.png" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-      <div class="container">
-         <div id="stopWatch">00:00:00:00</div>
-         <button id="play">START</button>
-          <button id="stop">STOP</button>
-          <button id="reset">RES</button>
-      </div>
-   
- 
-    </main>
-  
-    <script src="./script.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stopwatch</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="shortcut icon"
+			href="./asssets/stop-watch.png"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+        <div id="date"></div>
+        <div id="time"></div>
+				<div id="stopWatch">00:00:00:00</div>
+				<button id="play">START</button>
+				<button id="stop">STOP</button>
+				<button id="reset">RES</button>
+			</div>
+			<!-- Ses dosyaları -->
+			<audio id="playSound" src="./asssets/effects/start.mp3"></audio>
+			<audio id="stopSound" src="./asssets/effects/stop.mp3"></audio>
+			<audio id="resetSound" src="./asssets/effects/reset.mp3"></audio>
+		</main>
+
+		<script src="./script.js"></script>
+	</body>
 </html>
